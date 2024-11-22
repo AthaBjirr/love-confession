@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Someone Special</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <audio id="bgMusic">
+        <source src="static/no1party.mp3" type="audio/mp3">
+    </audio>
+    
+    <div class="container">
+        <div class="music-controls">
+            <button id="musicBtn" onclick="playMusic()">Play Music ♪</button>
+        </div>
+        <div class="heart"></div>
+        <div class="message">
+            <h1>Hey there!</h1>
+            <p>I've been wanting to tell you something...</p>
+            <button id="revealBtn" class="glow-button">Click Me!</button>
+        </div>
+        <div class="confession">
+            <p class="typing-text"></p>
+            <div class="choice-buttons">
+                <button id="yesBtn" class="rainbow-button">Yes ❤️</button>
+                <button id="noBtn" class="moving-button">No 💔</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
